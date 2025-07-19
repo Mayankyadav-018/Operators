@@ -47,6 +47,27 @@ Determine and display grade:
 
 End
 
+Algorithm: Determine the Position of a Point in Cartesian Plane
+Start
+
+Declare two float variables: x and y.
+
+Input coordinates:
+3.1 Prompt the user to enter the x-coordinate and store it in x.
+3.2 Prompt the user to enter the y-coordinate and store it in y.
+
+Check the position of the point using conditions:
+4.1 If x > 0 and y > 0, print "The point is in I Quadrant."
+4.2 Else if x < 0 and y > 0, print "The point is in II Quadrant."
+4.3 Else if x < 0 and y < 0, print "The point is in III Quadrant."
+4.4 Else if x > 0 and y < 0, print "The point is in IV Quadrant."
+4.5 Else if x == 0 and y == 0, print "The point lies on the centre."
+4.6 Else if y == 0, print "The point lies on the x axis."
+4.7 Else, print "The point lies on the y axis."
+
+End
+
+
 
 Conclusion:
 In this experiment, we explored different types of operators in C++, including arithmetic, relational, logical, assignment, and increment/decrement operators. We understood how these operators are used to perform various operations on variables. By writing and executing programs, we observed the behavior and precedence of each operator. This experiment strengthened our understanding of expression evaluation in C++.
