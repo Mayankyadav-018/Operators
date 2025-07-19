@@ -24,6 +24,29 @@ Operator	Description	Example
 ||	Called Logical OR Operator. If any of the two operands is non-zero, then condition becomes true.	(A || B) is true.
 !	Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true, then Logical NOT operator will make false.	!(A && B) is true.
 
+Algorithm: Grade Calculation Based on Average Marks
+Start
+
+Declare three integer variables: english, maths, and science.
+
+Input marks:
+3.1 Prompt the user to enter marks for English and store them in english.
+3.2 Prompt the user to enter marks for Maths and store them in maths.
+3.3 Prompt the user to enter marks for Science and store them in science.
+
+Calculate average:
+4.1 Use the formula: avg = (english + maths + science) / 3.
+
+Determine and display grade:
+5.1 If avg > 90, print "A+".
+5.2 Else if avg >= 80, print "A".
+5.3 Else if avg >= 70, print "B".
+5.4 Else if avg >= 60, print "C".
+5.5 Else if avg >= 50, print "D".
+5.6 Else, print "The student has failed".
+
+End
+
 
 Conclusion:
 In this experiment, we explored different types of operators in C++, including arithmetic, relational, logical, assignment, and increment/decrement operators. We understood how these operators are used to perform various operations on variables. By writing and executing programs, we observed the behavior and precedence of each operator. This experiment strengthened our understanding of expression evaluation in C++.
