@@ -1,76 +1,106 @@
-Aim: To study and implement Operators in C++
-Theory:
-Operators in C++
-Arithmetic Operators
-Operator	Description	Example
-+	Adds two operands	A + B will give 30
--	Subtracts second operand from the first	A - B will give -10
-*	Multiplies both operands	A * B will give 200
-/	Divides numerator by de-numerator	B / A will give 2
-%	Modulus Operator and remainder of after an integer division	B % A will give 0
-++	Increment operator, increases integer value by one	A++ will give 11
---	Decrement operator, decreases integer value by one	A-- will give 9
-Relational Operators
-Operator	Description	Example
-==	Checks if the values of two operands are equal or not, if yes then condition becomes true.	(A == B) is not true.
-!=	Checks if the values of two operands are equal or not, if values are not equal then condition becomes true.	(A != B) is true.
->	Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true.	(A > B) is not true.
-<	Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true.	(A < B) is true.
->=	Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.	(A >= B) is not true.
-<=	Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.	(A <= B) is true.
-Logical Operators
-Operator	Description	Example
-&&	Called Logical AND operator. If both the operands are non-zero, then condition becomes true.	(A && B) is false.
-||	Called Logical OR Operator. If any of the two operands is non-zero, then condition becomes true.	(A || B) is true.
-!	Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true, then Logical NOT operator will make false.	!(A && B) is true.
+# EXPERIMENT - 03
 
-Algorithm: Grade Calculation Based on Average Marks
-Start
+* Aim: To study and implement Operators in C++
+  
+* Tools Used - IDE, Arithmetic operators, assignment operators, relational operators, logical operators.
 
-Declare three integer variables: english, maths, and science.
+* Theory:
 
-Input marks:
-3.1 Prompt the user to enter marks for English and store them in english.
-3.2 Prompt the user to enter marks for Maths and store them in maths.
-3.3 Prompt the user to enter marks for Science and store them in science.
+In C++, operators are special symbols that perform specific operations on variables and values. They are essential for executing arithmetic calculations, comparing values, assigning data, and manipulating bits or logical conditions. Operators help define the logic and flow of a program by enabling developers to interact with data in meaningful ways. Understanding the various types of operators is crucial for writing efficient and functional C++ programs. They are categorized based on the type of operation they perform, such as arithmetic, relational, logical, assignment, and more.
 
-Calculate average:
-4.1 Use the formula: avg = (english + maths + science) / 3.
+🔹 Types of Operators in C++:
 
-Determine and display grade:
-5.1 If avg > 90, print "A+".
-5.2 Else if avg >= 80, print "A".
-5.3 Else if avg >= 70, print "B".
-5.4 Else if avg >= 60, print "C".
-5.5 Else if avg >= 50, print "D".
-5.6 Else, print "The student has failed".
+1. *Arithmetic Operators*:
+   Used to perform basic mathematical operations:
 
-End
+ +(Addition), - (Subtraction), * (Multiplication), / (Division), % (Modulus)
+🔸 Example: int sum = a + b;
 
-Algorithm: Determine the Position of a Point in Cartesian Plane
-Start
+2. *Relational (Comparison) Operators*:
+   Used to compare two values:
 
-Declare two float variables: x and y.
+ ==, !=, >, <, >=, <=
+🔸 Example: if (a > b)
 
-Input coordinates:
-3.1 Prompt the user to enter the x-coordinate and store it in x.
-3.2 Prompt the user to enter the y-coordinate and store it in y.
+3. *Logical Operators*:
+Used to combine multiple conditions:
 
-Check the position of the point using conditions:
-4.1 If x > 0 and y > 0, print "The point is in I Quadrant."
-4.2 Else if x < 0 and y > 0, print "The point is in II Quadrant."
-4.3 Else if x < 0 and y < 0, print "The point is in III Quadrant."
-4.4 Else if x > 0 and y < 0, print "The point is in IV Quadrant."
-4.5 Else if x == 0 and y == 0, print "The point lies on the centre."
-4.6 Else if y == 0, print "The point lies on the x axis."
-4.7 Else, print "The point lies on the y axis."
+ && (AND), || (OR), ! (NOT)
+🔸 Example: if (a > 0 && b > 0)
 
-End
+4. *Assignment Operators*:
+Used to assign values to variables:
+
+ =, +=, -=, *=, /=, %=
+🔸 Example: a += 5;
 
 
+# Grade Calculation Based on Average Marks
 
-Conclusion:
-In this experiment, we explored different types of operators in C++, including arithmetic, relational, logical, assignment, and increment/decrement operators. We understood how these operators are used to perform various operations on variables. By writing and executing programs, we observed the behavior and precedence of each operator. This experiment strengthened our understanding of expression evaluation in C++.
+This C++ program calculates the average marks of a student in three subjects—English, Maths, and Science—and assigns a grade based on the average. It uses input/output statements, arithmetic operations, and conditional (if-else) logic to determine the performance category of the student.
+
+*ALGORITHM:*
+
+1> Start
+
+2> Declare three integer variables: english, maths, science
+
+3> Take input for all three subjects using cin
+
+4> Calculate average: avg = (english + maths + science) / 3
+
+5>Use if-else to check the average and display the grade:
+
+   * If avg > 90, print "A+"
+
+   * Else if avg >= 80, print "A"
+
+   * Else if avg >= 70, print "B"
+
+   * Else if avg >= 60, print "C"
+
+   * Else if avg >= 50, print "D"
+
+   * Else, print "The student has failed"
+
+6> End
+
+# Find the quadrant of a point
+
+This C++ program determines the position of a point in the Cartesian plane based on its x and y coordinates. By using conditional statements (if-else), the program checks whether the point lies in a particular quadrant, on the axes, or at the origin. This helps reinforce concepts of coordinate geometry and logical branching in programming.
+
+*ALGORITHM:*
+
+1> Start
+
+2> Declare two variables: x, y
+
+3> Take input for x and y coordinates using cin
+
+4> Use if-else conditions to check and display the point’s location:
+
+  * If x > 0 && y > 0, print "The point is in I Quadrant."
+
+  * Else if x < 0 && y > 0, print "The point is in II Quadrant."
+
+  * Else if x < 0 && y < 0, print "The point is in III Quadrant."
+
+  * Else if x > 0 && y < 0, print "The point is in IV Quadrant."
+
+  * Else if x == 0 && y == 0, print "The point lies on the centre."
+
+  * Else if y == 0, print "The point lies on the x axis."
+
+  * Else, print "The point lies on the y axis."
+
+5> End
+
+
+
+
+* Conclusion:
+
+In this experiment, we explored different types of operators in C++, including arithmetic, relational and logical, assignment. We understood how these operators are used to perform various operations on variables. By writing and executing programs, we observed the behavior and precedence of each operator. This experiment strengthened our understanding of expression evaluation in C++.
 
 
 
